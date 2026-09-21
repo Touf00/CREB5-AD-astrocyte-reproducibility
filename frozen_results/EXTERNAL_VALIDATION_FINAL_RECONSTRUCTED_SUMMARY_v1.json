@@ -1,0 +1,13 @@
+{
+  "status": "final_reconstructed_from_preserved_executed_notebook03",
+  "accessions": [
+    {"Accession":"GSE188545","Region":"MTG","Final status":"Evaluable / complete","Supportive under locked rule":"Yes","AD donors":6,"Control donors":6,"AD astrocytes":1993,"Control astrocytes":4834,"Total astrocytes":6827,"Genes tested":16147,"Primary model":"~ diagnosis","log2FC":1.23137,"SE":0.320057,"95% CI low":0.604058,"95% CI high":1.858681,"Nominal P":0.000119404244481,"Genome-wide FDR":0.021501056,"Holm-adjusted P":0.000358212733443},
+    {"Accession":"GSE138852","Region":"EC","Final status":"Evaluable after donor reconstruction","Supportive under locked rule":"No","AD donors":6,"Control donors":6,"AD astrocytes":455,"Control astrocytes":1674,"Total astrocytes":2129,"Genes tested":10458,"Primary model":"~ diagnosis","log2FC":0.426928,"SE":0.439374,"95% CI low":-0.434245,"95% CI high":1.288101,"Nominal P":0.331212931908,"Genome-wide FDR":0.689318821918,"Holm-adjusted P":0.603154467438},
+    {"Accession":"GSE174367","Region":"PFC","Final status":"Evaluable / complete","Supportive under locked rule":"No","AD donors":11,"Control donors":7,"AD astrocytes":null,"Control astrocytes":null,"Total astrocytes":4756,"Genes tested":17289,"Primary model":"~ Age + Sex + RIN + Diagnosis","log2FC":0.309604,"SE":0.299697,"95% CI low":-0.277802,"95% CI high":0.897009,"Nominal P":0.301577233719,"Genome-wide FDR":0.769593351815,"Holm-adjusted P":0.603154467438}
+  ],
+  "fixed_effect":{"log2FC":0.677998,"SE":0.195831,"CI95_low":0.294169,"CI95_high":1.061826,"Z":3.462159,"P":0.000535861203005},
+  "heterogeneity":{"Q":4.826886,"df":2,"Q_P":0.0895065993714,"I2_percent":58.57},
+  "random_effects_DerSimonian_Laird":{"tau2":0.169902,"log2FC":0.670385,"SE":0.311931,"CI95_low":0.058999,"CI95_high":1.28177,"Z":2.149143,"P":0.0316230963615},
+  "artifact_reconstruction_manifest_sha256":"bfc48bad2ed73dbcff44dfb8fd50c03c45bf8616600b4fac4fc977e9f9119af7",
+  "historical_note":"The 2026-09-15 parked-GSE138852 state is preserved separately as intermediate provenance and is not the final synthesis."
+}
