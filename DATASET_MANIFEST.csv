@@ -1,0 +1,9 @@
+dataset,role,tissue/source,public_source,notes
+SEA-AD MTG,primary discovery,middle temporal gyrus,CELLxGENE Census / SEA-AD,Donor-level astrocyte pseudobulk
+SEA-AD DLPFC,within-atlas regional replication,dorsolateral prefrontal cortex,CELLxGENE Census / SEA-AD,Same fixed gene universe as MTG
+GSE160936 EC,independent-cohort regional validation,entorhinal cortex,NCBI GEO GSE160936,6 AD / 6 controls
+GSE160936 SSC,independent-cohort regional validation,somatosensory cortex,NCBI GEO GSE160936,6 AD / 6 controls
+GSE157827,target-insulated confirmation,prefrontal cortex,NCBI GEO GSE157827,12 AD / 9 controls
+GSE188545,prospective external validation,middle temporal gyrus,NCBI GEO GSE188545,6 AD / 6 controls
+GSE138852,prospective external validation,entorhinal cortex,NCBI GEO GSE138852,Donor identity reconstructed from author genotype-demultiplexed metadata; 6 AD / 6 controls
+GSE174367,prospective external validation,prefrontal cortex,NCBI GEO GSE174367,11 AD / 7 controls
