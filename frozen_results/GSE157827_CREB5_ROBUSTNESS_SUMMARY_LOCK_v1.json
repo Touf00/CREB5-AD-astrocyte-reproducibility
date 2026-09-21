@@ -1,0 +1,19 @@
+{
+  "project":"AD_Astrocyte_Paper_01",
+  "step":"16B",
+  "created_utc":"2026-09-13T03:55:30.043600+00:00",
+  "purpose":"Paper-facing descriptive summary of the frozen GSE157827 CREB5 primary and sensitivity analyses.",
+  "new_DE_performed":false,
+  "model_refitting_performed":false,
+  "new_filtering_performed":false,
+  "meta_analysis_performed":false,
+  "reason_no_meta_analysis":"All sensitivity analyses reuse overlapping nuclei and/or donors from the same GSE157827 cohort and are not statistically independent.",
+  "analyses_summarized":["Primary","Diagnosis-only","QC-loss exclusion","Scrublet-donor exclusion","Independent annotation"],
+  "number_of_analyses":5,
+  "CREB5_positive_in_all":true,
+  "CREB5_nominal_p_below_0_05_in_all":true,
+  "minimum_log2FC":0.8303514099908318,
+  "maximum_log2FC":0.9378231517436797,
+  "maximum_absolute_percent_effect_change_vs_primary":9.481618469060836,
+  "table_sha256":"7aa3361e2dac6fcc6d24f236be817db0d25d7507ef011905032af756c92a1766"
+}
