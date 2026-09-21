@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use these reproducibility materials, please cite the associated manuscript and this repository."
+title: "CREB5-AD-astrocyte-reproducibility"
+type: software
+authors:
+  - family-names: "Tawfik"
+    given-names: "Mohamed"
+    orcid: "https://orcid.org/0000-0002-5028-7463"
+repository-code: "https://github.com/Touf00/CREB5-AD-astrocyte-reproducibility"
+abstract: "Reproducibility materials for sequential cross-cohort validation of CREB5 upregulation in human Alzheimer's disease astrocytes."
+license: MIT
