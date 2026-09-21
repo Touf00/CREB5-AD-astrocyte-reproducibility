@@ -1,0 +1,160 @@
+{
+  "lock_name": "AD astrocyte external-validation protocol",
+  "version": "1.0",
+  "created_utc": "2026-09-13T17:57:46.841970+00:00",
+  "purpose": "Prospective validation of the direction and magnitude of the CREB5 AD-versus-control astrocyte association using independent human sn/scRNA-seq datasets.",
+  "processing_order": [
+    "GSE188545",
+    "GSE138852",
+    "GSE174367"
+  ],
+  "target_reveal_gate": "For each accession, CREB5 may be queried only after dataset eligibility, QC, astrocyte identification, donor pseudobulk construction, gene filtering, design locking, genome-wide differential expression, and saving the complete genome-wide result table.",
+  "eligibility": {
+    "species": "Homo sapiens",
+    "assay": "single-cell or single-nucleus RNA sequencing of postmortem brain",
+    "comparison": "Alzheimer disease versus neurologically normal/healthy control",
+    "independence_unit": "human biological donor; a library or nucleus is never treated as a replicate",
+    "required_donor_linkage": "Every included nucleus must map unambiguously to one donor. Pooled libraries are eligible only if the submitted cell metadata demultiplexes nuclei to donors.",
+    "minimum_eligible_donors_per_group": 5,
+    "minimum_accepted_astrocytes_per_donor": 20,
+    "required_expression": "raw integer UMI counts, either author-filtered or reconstructed from submitted raw matrices; normalized/log-transformed values alone are ineligible for pseudobulk DE",
+    "exclusions": [
+      "ambiguous diagnosis or donor identity",
+      "duplicate donor already represented in another accession unless modeled explicitly",
+      "fewer than 20 accepted astrocytes in a donor",
+      "fewer than 5 eligible donors in either diagnosis group after donor exclusions",
+      "no defensible astrocyte identification",
+      "no raw integer counts"
+    ]
+  },
+  "qc": {
+    "primary_hierarchy": [
+      "Use documented author QC and submitted author-filtered counts when available.",
+      "If unfiltered matrices and exact published thresholds are available, reproduce those thresholds.",
+      "If only author-filtered counts are available, accept the submitted filtered population and record that raw-QC reproduction was unavailable."
+    ],
+    "doublets": "Use documented author doublet removal when represented in the deposited filtered data or metadata. If absent and unfiltered matrices are used, run Scrublet separately per independent 10x capture library, not per diagnosis and not using target expression.",
+    "qc_reporting": [
+      "input nuclei",
+      "retained nuclei",
+      "retention percentage",
+      "counts by donor and diagnosis",
+      "median genes and UMIs",
+      "mitochondrial percentage where available",
+      "doublet handling",
+      "all donor exclusions and all departures from this hierarchy"
+    ]
+  },
+  "astrocyte_identification": {
+    "primary": "Use the study's author-provided broad cell-type annotation when its nucleus-to-label mapping and provenance are recoverable. Accept labels explicitly denoting astrocytes.",
+    "fallback": "If author labels are unavailable, perform diagnosis-blind graph clustering and identify astrocyte clusters from canonical positive and exclusion markers. Diagnosis and CREB5 must not influence feature selection, clustering, resolution, or cluster labels.",
+    "positive_markers": [
+      "AQP4",
+      "ALDH1L1",
+      "SLC1A2",
+      "SLC1A3",
+      "GJA1",
+      "GFAP"
+    ],
+    "exclusion_markers": {
+      "neuronal": [
+        "RBFOX3",
+        "SNAP25",
+        "SYT1"
+      ],
+      "oligodendrocyte": [
+        "MBP",
+        "MOG",
+        "PLP1"
+      ],
+      "microglia": [
+        "CX3CR1",
+        "P2RY12",
+        "AIF1"
+      ],
+      "endothelial": [
+        "CLDN5",
+        "FLT1",
+        "KDR"
+      ],
+      "pericyte": [
+        "PDGFRB",
+        "RGS5",
+        "CSPG4"
+      ]
+    },
+    "target_exclusion": "CREB5 is excluded from annotation features and marker-based decisions; its expression is not inspected."
+  },
+  "pseudobulk": {
+    "aggregation": "sum raw integer UMI counts across accepted astrocytes separately for each donor",
+    "one_column_per_donor": true,
+    "zero_count_genes_removed_before_cpm": true,
+    "library_size": "sum of donor astrocyte pseudobulk counts"
+  },
+  "gene_filtering": {
+    "rule": "retain genes with CPM >= 1 in at least min(number of eligible AD donors, number of eligible control donors) pseudobulk samples",
+    "rule_is_applied_before_DE": true,
+    "gene_universe_is_frozen_before_target_reveal": true,
+    "mitochondrial_genes": "exclude genes with symbols beginning MT- from the tested universe",
+    "no_target_specific_filtering": true
+  },
+  "differential_expression": {
+    "engine": "DESeq2-compatible negative-binomial donor-level pseudobulk Wald model",
+    "contrast": "AD versus Control; positive log2FC means higher expression in AD astrocytes",
+    "primary_design_rule": "Use ~ age + sex + diagnosis only when age and sex are complete for all eligible donors and the design matrix is full rank; otherwise use ~ diagnosis and record the missing/non-estimable covariates.",
+    "age": "numeric years; no imputation",
+    "sex": "categorical; no imputation",
+    "technical_covariates": "A documented batch/library covariate may be added only in a prespecified sensitivity model if complete, full-rank, and not nested in or confounded with diagnosis; it is not added opportunistically.",
+    "multiple_testing": "Benjamini-Hochberg FDR across the complete retained genome-wide gene universe",
+    "confidence_interval": "two-sided 95% Wald interval: log2FC +/- 1.96 * SE",
+    "outlier_replacement": "report software default behavior and any replaced/excluded genes",
+    "complete_result_required_before_target_reveal": true
+  },
+  "creb5_confirmation": {
+    "per_dataset_fields": [
+      "log2FoldChange",
+      "lfcSE",
+      "CI95_low",
+      "CI95_high",
+      "pvalue",
+      "genome_wide_padj",
+      "AD_donors",
+      "Control_donors",
+      "AD_astrocytes",
+      "Control_astrocytes",
+      "deviations"
+    ],
+    "supportive_per_dataset": "positive log2FC and two-sided nominal P < 0.05",
+    "three_dataset_multiplicity": "After all eligible accession-level tests are complete, apply Holm family-wise correction to the three prespecified CREB5 P values; structural ineligibility is reported and is not replaced by another dataset.",
+    "meta_analysis": "After all three datasets, combine log2FC and SE using inverse-variance fixed effect as the primary summary and report random-effects sensitivity, Cochran Q and I-squared."
+  },
+  "deviation_policy": {
+    "timing": "Every unavoidable deviation must be written and saved before CREB5 is queried in that dataset.",
+    "required_fields": [
+      "accession",
+      "stage",
+      "planned_rule",
+      "actual_action",
+      "reason",
+      "likely_impact"
+    ],
+    "prohibited": [
+      "changing QC, annotation, donor, gene-filter, model, or outlier rules after viewing CREB5",
+      "using expected CREB5 direction or significance to choose among pipelines",
+      "substituting nuclei or libraries for donor replication"
+    ]
+  },
+  "stage_order_per_dataset": [
+    "01_metadata_and_remote_file_inventory",
+    "02_eligibility_decision",
+    "03_download_and_integrity_manifest",
+    "04_qc_and_doublet_handling",
+    "05_astrocyte_identification",
+    "06_donor_level_raw_count_aggregation",
+    "07_gene_filter_and_design_lock",
+    "08_genome_wide_DE_and_full_result_save",
+    "09_CREB5_reveal_and_report"
+  ],
+  "manuscript_editing_allowed": false,
+  "scientific_rules_sha256": "ea54a1b3e8e2ff361ec1fc6f55ed2330410e347081926cb657f4df8892e8d8b0"
+}
