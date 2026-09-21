@@ -1,0 +1,67 @@
+===== NOTEBOOK 03 CELL 53 | execution_count=49 =====
+Locked input schemas reconciled: PASS
+
+Exact locked primary inputs:
+accession analysis  log2FoldChange       SE  nominal_pvalue
+GSE188545  primary        1.231370 0.320057        0.000119
+GSE138852  primary        0.426928 0.439374        0.331213
+GSE174367  primary        0.309604 0.299697        0.301577
+
+FINAL THREE-DATASET CREB5 EXTERNAL-VALIDATION SYNTHESIS
+
+GSE188545 Holm-adjusted P: 0.000358
+GSE138852 Holm-adjusted P: 0.603154
+GSE174367 Holm-adjusted P: 0.603154
+
+FIXED-EFFECT PRIMARY
+log2FC: 0.677998
+SE: 0.195831
+95% CI: [0.294169, 1.061826]
+P: 0.000535861203005
+
+HETEROGENEITY
+Cochran Q: 4.826886
+df: 2
+Q P: 0.0895065993714
+I²: 58.57%
+
+RANDOM-EFFECTS SENSITIVITY — DerSimonian-Laird
+tau²: 0.169902
+log2FC: 0.670385
+SE: 0.311931
+95% CI: [0.058999, 1.281770]
+P: 0.0316230963615
+
+All three primary effects positive: YES
+Model refitting after target reveal: NO
+Dataset substitution after target reveal: NO
+
+===== NOTEBOOK 03 CELL 54 | execution_count=50 =====
+GSE138852 CORRECTED PROTOCOL DISPOSITION v2
+
+Status: eligible_completed_and_included_in_final_external_validation
+Biological donor resolution: COMPLETE
+Donors: 12 (6 AD / 6 Control)
+Astrocytes: 2,129 (455 AD / 1,674 Control)
+Genome-wide DE completed: YES
+CREB5 examined: YES
+CREB5 log2FC: 0.426928
+CREB5 nominal P: 0.331212931908
+Included in final three-dataset synthesis: YES
+
+Scientific rules changed: NO
+Post-target model refit: NO
+
+===== NOTEBOOK 03 CELL 55 | execution_count=51 =====
+EXTERNAL VALIDATION ARTIFACT RECONSTRUCTION COMPLETE
+
+Scientific rules changed: NO
+Original artifact timestamps recovered: NO
+Reconstruction timestamps are original timestamps: NO
+GSE188545 reconstructed through CREB5 reveal: YES
+GSE138852 reconstructed through CREB5 reveal: YES
+GSE174367 reconstructed through CREB5 reveal: YES
+Final three-dataset synthesis complete: YES
+Post-target model refitting performed: NO
+
+Manifest SHA256: bfc48bad2ed73dbcff44dfb8fd50c03c45bf8616600b4fac4fc977e9f9119af7
