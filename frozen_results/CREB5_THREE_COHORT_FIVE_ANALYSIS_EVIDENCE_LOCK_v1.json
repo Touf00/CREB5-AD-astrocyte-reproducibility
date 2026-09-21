@@ -1,0 +1,22 @@
+{
+  "project":"AD_Astrocyte_Paper_01",
+  "step":"16A",
+  "created_utc":"2026-09-13T03:50:01.553011+00:00",
+  "purpose":"Integrate the frozen GSE157827 confirmatory CREB5 result with the existing four regional analyses.",
+  "new_differential_expression_performed":false,
+  "model_refitting_performed":false,
+  "target_selection_performed":false,
+  "meta_analysis_performed":false,
+  "reason_no_meta_analysis":"SEA-AD MTG and DLPFC are correlated regional analyses from one cohort; GSE160936 EC and SSC are correlated regional analyses from one cohort.",
+  "number_of_cohorts":3,
+  "number_of_regional_analyses":5,
+  "cohorts":["SEA-AD","GSE160936","GSE157827"],
+  "CREB5_positive_in_all_five":true,
+  "CREB5_positive_count":5,
+  "CREB5_nominal_p_below_0_05_count":4,
+  "CREB5_genome_wide_FDR_below_0_05_count":1,
+  "GSE157827_primary_log2FC":0.8566032954734822,
+  "GSE157827_primary_pvalue":3.7799716195705296e-05,
+  "GSE157827_primary_padj":0.2893498915004855,
+  "master_table_sha256":"580580e58a736ab55700f996baaa6733886efbf82da4004fb7da893404bf948b"
+}
