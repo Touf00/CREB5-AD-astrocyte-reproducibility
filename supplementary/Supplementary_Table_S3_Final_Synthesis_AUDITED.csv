@@ -1,0 +1,23 @@
+Metric,Result
+Prespecified accessions,3
+Valid donor-level accession tests,3
+Positive CREB5 direction,3/3
+Meets per-dataset supportive criterion,1/3
+Holm correction executed,Yes
+GSE188545 Holm-adjusted P,0.000358212733443
+GSE138852 Holm-adjusted P,0.603154467438
+GSE174367 Holm-adjusted P,0.603154467438
+Fixed-effect pooled log2FC,0.677998
+Fixed-effect SE,0.195831
+Fixed-effect 95% CI,0.294169 to 1.061826
+Fixed-effect P,0.000535861203005
+Cochran Q,4.826886
+Q df,2
+Q P,0.0895065993714
+I²,58.57%
+DerSimonian-Laird tau²,0.169902
+Random-effects log2FC,0.670385
+Random-effects SE,0.311931
+Random-effects 95% CI,0.058999 to 1.281770
+Random-effects P,0.0316230963615
+Reconstruction manifest SHA-256,bfc48bad2ed73dbcff44dfb8fd50c03c45bf8616600b4fac4fc977e9f9119af7
