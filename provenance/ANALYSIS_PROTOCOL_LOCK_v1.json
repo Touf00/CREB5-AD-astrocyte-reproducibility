@@ -1,0 +1,32 @@
+{
+  "protocol_version": "1.0",
+  "frozen_at_utc": "2026-09-11T15:40:01.587216+00:00",
+  "provisional_study_title": "Cross-cohort transcriptomic analysis of astrocyte responses in Alzheimer's disease",
+  "dataset_roles": {
+    "SEA_AD_MTG": "primary discovery",
+    "SEA_AD_DLPFC": "within-cohort regional replication",
+    "GSE160936_EC_SSC": "external regional validation",
+    "GSE157827_PFC": "untouched confirmatory validation",
+    "GSE268599": "future progression and regional analysis"
+  },
+  "primary_confirmatory_gene": "CREB5",
+  "secondary_locked_genes": [
+    "CSRP1",
+    "SHC1",
+    "KCNH2",
+    "MRGPRF",
+    "AJAP1",
+    "CCDC3"
+  ],
+  "primary_comparison": "Alzheimer's disease versus non-disease control",
+  "primary_analysis_unit": "donor-level astrocyte pseudobulk",
+  "counts_requirement": "raw integer counts summed across astrocyte nuclei",
+  "expression_filter": "CPM >= 1 in at least the size of the smaller diagnostic group; filtering must not use effect direction",
+  "primary_model_rule": "Use disease plus age and sex when metadata are complete and the design is full rank. Missing or unavailable covariates will not be imputed. Simpler models will be reported as sensitivity analyses.",
+  "primary_contrast": "AD relative to non-disease control; positive log2FC means higher expression in AD",
+  "CREB5_success_rule": "CREB5 must be present, have positive log2FC, and have a two-sided nominal p-value below 0.05 in GSE157827",
+  "secondary_gene_rule": "The secondary locked genes will be corrected together for multiple testing",
+  "transcriptome_wide_rule": "Genome-wide significance requires FDR below 0.05",
+  "prohibited_analysis": "Individual nuclei must not be treated as independent biological replicates for differential expression",
+  "interpretation_rule": "Same-direction nonsignificant results are directional support, not statistically significant replication"
+}
