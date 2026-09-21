@@ -1,0 +1,34 @@
+{
+  "record_type": "release_reconstruction_note",
+  "purpose": "Distinguish the final completed three-accession analysis from the preserved 2026-09-15 intermediate state.",
+  "final_source": "Preserved executed AD_Astrocyte_Paper_03_External_Validation.ipynb, executed cells 53-55 (execution counts 49-51), plus the final manuscript tables.",
+  "historical_intermediate_state": "EXTERNAL_VALIDATION_FINALIZATION_LOCK_v1.json dated 2026-09-15 records GSE138852 as parked and no three-study synthesis. It is preserved under provenance as history, not used as the final result.",
+  "later_final_state": {
+    "GSE138852_status": "eligible_completed_and_included_in_final_external_validation",
+    "donors": {"AD": 6, "Control": 6},
+    "astrocytes": {"AD": 455, "Control": 1674, "total": 2129},
+    "log2FC": 0.426928,
+    "SE": 0.439374,
+    "P": 0.331212931908,
+    "FDR": 0.689318821918,
+    "included_in_three_accession_synthesis": true
+  },
+  "final_fixed_effect": {
+    "log2FC": 0.677998,
+    "SE": 0.195831,
+    "CI95": [0.294169, 1.061826],
+    "P": 0.000535861203005
+  },
+  "final_random_effects_sensitivity": {
+    "method": "DerSimonian-Laird",
+    "tau2": 0.169902,
+    "log2FC": 0.670385,
+    "SE": 0.311931,
+    "CI95": [0.058999, 1.28177],
+    "P": 0.0316230963615
+  },
+  "heterogeneity": {"Q": 4.826886, "df": 2, "Q_P": 0.0895065993714, "I2_percent": 58.57},
+  "original_reconstruction_manifest_hash_printed_by_notebook": "bfc48bad2ed73dbcff44dfb8fd50c03c45bf8616600b4fac4fc977e9f9119af7",
+  "original_reconstruction_manifest_file_recovered": false,
+  "timestamp_policy": "No missing historical timestamp has been recreated or inferred."
+}
