@@ -1,0 +1,26 @@
+{
+  "stage": "NOTEBOOK03_EXTERNAL_VALIDATION_FINALIZED",
+  "external_protocol_sha256": "ea54a1b3e8e2ff361ec1fc6f55ed2330410e347081926cb657f4df8892e8d8b0",
+  "GSE188545_target_result_sha256": "3b8292e5a183879bf8f4366db8ae8a33a4558a72b9cec95f1181df635194485b",
+  "GSE188545_reveal_lock_sha256": "567ab8a452a1197044c6fffcc4877406f2e25e8f2d53ccd01b82b64230b36f82",
+  "GSE138852_protocol_disposition_sha256": "5587bbb0646a198310c070465a923fcb97935c83c18098afda931717d607200f",
+  "GSE138852_quarantine_record_sha256": "aab2eb5452c4b94a6b8361822780b633fe57055242fb5503b04ae19c4bfcdfd9",
+  "GSE174367_genomewide_lock_sha256": "500c3bd627c1fd50ba4dac627bbe0457032b4b5e4b5514e3cbb550d8cc78fa2b",
+  "GSE174367_target_result_sha256": "92678231fbc9817e9a8a2d9d47c625f8fb0d4980d26a07d6846c7dd8d2f5bce2",
+  "GSE174367_reveal_lock_sha256": "7c90f1e5876d46d08ce6071f2adef8cb5f8b9703309311385453b76d9eb9b077",
+  "final_accession_summary_sha256": "03cbe3c06b024ab96eb6d95e55fe5ee07d319672ebb6e38b1a3188635b00ec7a",
+  "final_summary_json_sha256": "1f531422593a4fe12f0e6032c5057cb9ad56a5134095a01fdee0354cb6f27896",
+  "valid_accession_level_tests": [
+    "GSE188545",
+    "GSE174367"
+  ],
+  "structurally_unresolved_accessions": [
+    "GSE138852"
+  ],
+  "legacy_GSE138852_target_result_used": false,
+  "Holm_executed": false,
+  "three_dataset_meta_analysis_executed": false,
+  "replacement_dataset_used": false,
+  "manuscript_edited": false,
+  "created_utc": "2026-09-15T22:21:34.440179+00:00"
+}
