@@ -1,0 +1,39 @@
+{
+  "analysis": "AD astrocyte CREB5 external validation",
+  "target_gene": "CREB5",
+  "target_ensembl_base": "ENSG00000146592",
+  "external_protocol_sha256": "ea54a1b3e8e2ff361ec1fc6f55ed2330410e347081926cb657f4df8892e8d8b0",
+  "prespecified_accessions": [
+    "GSE188545",
+    "GSE138852",
+    "GSE174367"
+  ],
+  "number_prespecified_accessions": 3,
+  "number_valid_accession_level_tests": 2,
+  "number_structurally_unresolved": 1,
+  "accession_status": {
+    "GSE188545": "EVALUABLE_COMPLETED",
+    "GSE138852": "STRUCTURALLY_UNRESOLVED_PARKED",
+    "GSE174367": "EVALUABLE_COMPLETED"
+  },
+  "GSE138852_legacy_target_result_excluded": true,
+  "replacement_dataset_used": false,
+  "Holm_executed": false,
+  "Holm_status": "NOT_EXECUTED__ONE_OF_THREE_PRESPECIFIED_ACCESSIONS_HAS_NO_VALID_DONOR_LEVEL_PVALUE",
+  "Holm_reason": "The locked procedure prespecified three accession-level CREB5 tests. GSE138852 does not currently provide a valid donor-level P value under the locked replication rule. The superseded earlier GSE138852 value is excluded, and no replacement dataset is introduced.",
+  "prespecified_three_dataset_meta_analysis_executed": false,
+  "prespecified_three_dataset_meta_analysis_status": "NOT_EXECUTED_AS_PRESPECIFIED__ONE_OF_THREE_PRESPECIFIED_ACCESSIONS_HAS_NO_VALID_DONOR_LEVEL_ESTIMATE",
+  "meta_analysis_reason": "A valid donor-level log2FC and SE are available for only two of the three prespecified accessions. A three-dataset meta-analysis is therefore not fabricated.",
+  "descriptive_evaluable_dataset_count": 2,
+  "descriptive_positive_direction_count": 2,
+  "descriptive_supportive_under_per_dataset_rule_count": 1,
+  "GSE174367_all_prespecified_models_positive_direction": true,
+  "final_accession_summary_csv": "/content/drive/MyDrive/AD_Astrocyte_Paper_01/external_validation/EXTERNAL_VALIDATION_FINAL_ACCESSION_SUMMARY_v1.csv",
+  "final_accession_summary_csv_sha256": "03cbe3c06b024ab96eb6d95e55fe5ee07d319672ebb6e38b1a3188635b00ec7a",
+  "manuscript_edited": false,
+  "additional_DE_fitting_performed_in_finalization": false,
+  "additional_gene_filtering_performed_in_finalization": false,
+  "post_target_donor_selection_change": false,
+  "post_target_model_selection_change": false,
+  "created_utc": "2026-09-15T22:21:34.390509+00:00"
+}
