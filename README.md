@@ -77,7 +77,7 @@ All biological datasets analyzed are public resources. The study uses SEA-AD/CEL
 
 The compact verification script checks the locked GSE157827 CREB5 result and recomputes the final external fixed-effect synthesis from the accession-level estimates.
 
-A frozen archival release is reserved at Zenodo: **https://doi.org/10.5281/zenodo.22884235**.
+A frozen archival release is published at Zenodo: **https://doi.org/10.5281/zenodo.22884235**.
 
 ## Citation
 
