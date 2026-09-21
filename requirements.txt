@@ -1,0 +1,4 @@
+# This project used stage-specific locked environments.
+# Install the requirements file matching the notebook you are running.
+# See README.md.
+-r requirements_notebook01.txt
