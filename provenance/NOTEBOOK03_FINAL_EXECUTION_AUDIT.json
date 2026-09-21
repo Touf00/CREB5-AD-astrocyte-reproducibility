@@ -1,0 +1,9 @@
+{
+  "source": "preserved executed AD_Astrocyte_Paper_03_External_Validation.ipynb.ipynb",
+  "authoritative_final_cells": [
+    {"cell_index": 53, "execution_count": 49, "first_source_line": "# ============================================================"},
+    {"cell_index": 54, "execution_count": 50, "first_source_line": "# ============================================================"},
+    {"cell_index": 55, "execution_count": 51, "first_source_line": "# ============================================================"}
+  ],
+  "note": "Later physical notebook cells with stale parked-GSE138852 text have no execution count in the final session and are superseded historical content. The cleaned public notebook removes those branches."
+}
