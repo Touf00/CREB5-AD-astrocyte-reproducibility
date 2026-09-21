@@ -1,0 +1,4 @@
+accession,final_status,included_as_valid_accession_level_test,primary_model,AD_donors,Control_donors,log2FoldChange,lfcSE,CI95_low,CI95_high,nominal_pvalue,genomewide_FDR,positive_direction,supportive_under_locked_per_dataset_rule,note
+GSE188545,EVALUABLE_COMPLETED,True,~ diagnosis,6.0,6.0,1.2313695766156472,0.3200568782574276,0.604058095231089,1.858681058000205,0.0001194042444808,0.0215010559679762,True,True,Completed donor-level external validation.
+GSE138852,STRUCTURALLY_UNRESOLVED_PARKED,False,,,,,,,,,,,,No valid donor-level accession estimate retained. Earlier target artifact is quarantined and excluded.
+GSE174367,EVALUABLE_COMPLETED,True,~ Age + Sex + RIN + Diagnosis,11.0,7.0,0.309603807623877,0.2996967382921146,-0.2778017994286675,0.8970094146764217,0.3015772337188175,0.7695933518151578,True,False,Completed donor-level primary analysis; CREB5 direction remained positive in prespecified PMI and Batch sensitivity models.
