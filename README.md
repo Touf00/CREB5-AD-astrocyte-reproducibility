@@ -61,11 +61,16 @@ The original GSE157827 protocol lock predates the confirmatory result lock, and 
 - `notebooks/` — cleaned public notebooks.
 - `provenance/` — protocol/result locks, chronology notes, and historical intermediate records.
 - `frozen_results/` — compact result tables and machine-readable final summaries needed to verify the manuscript statistics.
-- `supplementary/` — final supplementary tables.
-- `figures/` — manuscript figures when included in the archived release.
-- `environment.yml` and `requirements.txt` — software environment information.
+- `supplementary/` — machine-readable supplementary tables and the external-validation synthesis.
+- `figures/` — manuscript figures included in the repository release.
+- `requirements.txt` and `requirements_notebook*.txt` — software environment specifications.
+- `DATASET_MANIFEST.csv` — dataset/accession manifest.
 - `verify_release.py` — compact consistency checks.
-- `CHECKSUMS_SHA256.txt` / `RELEASE_MANIFEST.tsv` — file-level release audit.
+- `CITATION.cff` and `LICENSE` — citation metadata and repository license.
+
+Within `supplementary/`, only `Supplementary_Table_S3_External_Validation_AUDITED_FINAL.csv` is labeled as Supplementary Table S3. The aggregate synthesis is stored separately as `External_Validation_Final_Synthesis_AUDITED.csv` to avoid two files presenting themselves as “Supplementary Table S3”.
+
+The formatted Supplementary Table S3 supplied with the manuscript/preprint contains four sections: accession-level results, the locked external-validation protocol, the final synthesis, and the GSE174367 sensitivity analyses. Machine-readable source outputs for these sections are preserved across `supplementary/`, `frozen_results/`, and `provenance/`.
 
 Large genome-wide result tables and executed archival notebooks are intended for the immutable Zenodo release rather than duplicated unnecessarily in GitHub.
 
