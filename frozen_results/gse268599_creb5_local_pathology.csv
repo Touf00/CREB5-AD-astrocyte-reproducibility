@@ -1,0 +1,6 @@
+region,abeta_r,abeta_p,ptau_tau_r,ptau_tau_p,abeta_bh_q,ptau_tau_bh_q,gene,cell_type,source,accession,access_date,r_origin,p_origin,q_origin
+EC,-0.091,0.71,-0.12,0.58,0.97,0.97,CREB5,astrocytes,AD Progression Atlas,GSE268599,2026-09-27,portal-reported,portal-reported,calculated in present study
+ITG,0.3,0.1,0.25,0.17,0.5,0.5666666666666668,CREB5,astrocytes,AD Progression Atlas,GSE268599,2026-09-27,portal-reported,portal-reported,calculated in present study
+PFC,-0.0088,0.97,0.1,0.61,0.97,0.97,CREB5,astrocytes,AD Progression Atlas,GSE268599,2026-09-27,portal-reported,portal-reported,calculated in present study
+V2,0.35,0.048,0.028,0.88,0.48,0.97,CREB5,astrocytes,AD Progression Atlas,GSE268599,2026-09-27,portal-reported,portal-reported,calculated in present study
+V1,-0.13,0.5,-0.042,0.82,0.97,0.97,CREB5,astrocytes,AD Progression Atlas,GSE268599,2026-09-27,portal-reported,portal-reported,calculated in present study

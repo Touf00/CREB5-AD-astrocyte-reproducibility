@@ -1,0 +1,7 @@
+region,comparison,portal_p,gene,cell_type,source,accession,access_date,p_origin,multiplicity_note
+ITG,1_vs_3,0.00317,CREB5,astrocytes,AD Progression Atlas,GSE268599,2026-09-27,portal-reported,No additional correction applied because complete portal pairwise-comparison family was unavailable.
+ITG,1_vs_4,0.0128,CREB5,astrocytes,AD Progression Atlas,GSE268599,2026-09-27,portal-reported,No additional correction applied because complete portal pairwise-comparison family was unavailable.
+V2,1_vs_3,0.00741,CREB5,astrocytes,AD Progression Atlas,GSE268599,2026-09-27,portal-reported,No additional correction applied because complete portal pairwise-comparison family was unavailable.
+V2,1_vs_4,0.00538,CREB5,astrocytes,AD Progression Atlas,GSE268599,2026-09-27,portal-reported,No additional correction applied because complete portal pairwise-comparison family was unavailable.
+V1,1_vs_3,0.000939,CREB5,astrocytes,AD Progression Atlas,GSE268599,2026-09-27,portal-reported,No additional correction applied because complete portal pairwise-comparison family was unavailable.
+V1,1_vs_4,0.000939,CREB5,astrocytes,AD Progression Atlas,GSE268599,2026-09-27,portal-reported,No additional correction applied because complete portal pairwise-comparison family was unavailable.

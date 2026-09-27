@@ -1,0 +1,4 @@
+Phenotype,Displayed_OR_position,Qualitative_direction,Resource,Domain,Gene,Exact_OR_transcribed,Evidence_origin,Use_in_manuscript,Access_date
+BRAAK,>1,positive association,Agora,Association with hallmarks of AD,CREB5,False,Portal figure,Descriptive contextualization only,2026-09-27
+CERAD,<1,inverse association,Agora,Association with hallmarks of AD,CREB5,False,Portal figure,Descriptive contextualization only,2026-09-27
+COGDX,<1,inverse/near-null association,Agora,Association with hallmarks of AD,CREB5,False,Portal figure,Descriptive contextualization only,2026-09-27

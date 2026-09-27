@@ -1,0 +1,6 @@
+region,comparison,braak_group_1,braak_group_2,portal_p,direction,additional_bh_q,gene,cell_type,source,accession,access_date,p_origin,q_origin
+EC,B1_vs_B3,B1 (0/I/II),B3 (V/VI),0.0317,B3 > B1,0.0317,CREB5,astrocytes,AD Progression Atlas,GSE268599,2026-09-27,portal-reported,calculated in present study
+ITG,B1_vs_B3,B1 (0/I/II),B3 (V/VI),0.000249,B3 > B1,0.0004783333333333333,CREB5,astrocytes,AD Progression Atlas,GSE268599,2026-09-27,portal-reported,calculated in present study
+PFC,B1_vs_B3,B1 (0/I/II),B3 (V/VI),0.00831,B3 > B1,0.0103875,CREB5,astrocytes,AD Progression Atlas,GSE268599,2026-09-27,portal-reported,calculated in present study
+V2,B1_vs_B3,B1 (0/I/II),B3 (V/VI),0.000287,B3 > B1,0.0004783333333333333,CREB5,astrocytes,AD Progression Atlas,GSE268599,2026-09-27,portal-reported,calculated in present study
+V1,B1_vs_B3,B1 (0/I/II),B3 (V/VI),1.58e-05,B3 > B1,7.9e-05,CREB5,astrocytes,AD Progression Atlas,GSE268599,2026-09-27,portal-reported,calculated in present study

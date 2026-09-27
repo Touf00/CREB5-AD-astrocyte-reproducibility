@@ -1,0 +1,2 @@
+region,comparison,braak_group_1,braak_group_2,portal_p,direction,gene,cell_type,source,accession,access_date,p_origin
+V1,B1_vs_B2,B1 (0/I/II),B2 (III/IV),0.0314,B2 > B1,CREB5,astrocytes,AD Progression Atlas,GSE268599,2026-09-27,portal-reported

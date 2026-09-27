@@ -1,0 +1,2 @@
+Resource,Domain,Item,Region_or_panel,Metric,Value,Numeric_value,Lower_bound,Upper_bound,Direction_or_status,Evidence_origin,Use_in_manuscript,Interpretation,Access_date
+Human Protein Atlas,Normal brain cell-type context,CREB5,Single nuclei brain,Brain cluster specificity,"Cell type enhanced (Oligodendrocyte, Committed oligodendrocyte precursor)",,,,Not astrocyte-specific,HPA resource-reported classification,Contextual only,CREB5 is not classified as a constitutive normal-brain astrocyte-specific transcript.,2026-09-27
