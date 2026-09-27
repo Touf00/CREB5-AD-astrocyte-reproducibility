@@ -1,0 +1,27 @@
+Resource,Evidence_domain,Region_or_item,Measure,Result,Numeric_value,Lower_bound,Upper_bound,Interpretation,Evidence_origin,Use_in_inference,Access_date
+Human Protein Atlas,Normal brain cell-type context,Single nuclei brain,Brain cluster specificity,"Cell type enhanced (Oligodendrocyte, Committed oligodendrocyte precursor)",,,,CREB5 is not classified as a constitutive normal-brain astrocyte-specific transcript.,HPA resource-reported classification,Contextual only,2026-09-27
+Agora,Overall RNA expression,ACC,log2 CPM,4.99,4.99,,,CREB5 detectable in bulk tissue,Portal figure label,Contextual only,2026-09-27
+Agora,Overall RNA expression,CBE,log2 CPM,4.68,4.68,,,CREB5 detectable in bulk tissue,Portal figure label,Contextual only,2026-09-27
+Agora,Overall RNA expression,DLPFC,log2 CPM,4.80,4.8,,,CREB5 detectable in bulk tissue,Portal figure label,Contextual only,2026-09-27
+Agora,Overall RNA expression,FP,log2 CPM,5.34,5.34,,,CREB5 detectable in bulk tissue,Portal figure label,Contextual only,2026-09-27
+Agora,Overall RNA expression,IFG,log2 CPM,5.62,5.62,,,CREB5 detectable in bulk tissue,Portal figure label,Contextual only,2026-09-27
+Agora,Overall RNA expression,PCC,log2 CPM,4.88,4.88,,,CREB5 detectable in bulk tissue,Portal figure label,Contextual only,2026-09-27
+Agora,Overall RNA expression,PHG,log2 CPM,5.95,5.95,,,CREB5 detectable in bulk tissue,Portal figure label,Contextual only,2026-09-27
+Agora,Overall RNA expression,STG,log2 CPM,5.70,5.7,,,CREB5 detectable in bulk tissue,Portal figure label,Contextual only,2026-09-27
+Agora,Overall RNA expression,TCX,log2 CPM,5.44,5.44,,,CREB5 detectable in bulk tissue,Portal figure label,Contextual only,2026-09-27
+Agora,AD diagnosis RNA differential expression,ACC,Displayed log2FC interval,negative; interval -0.33 to -0.084,,-0.33,-0.084,displayed interval excludes zero,Portal forest plot; printed CI endpoints and visually displayed point direction,Contextual only,2026-09-27
+Agora,AD diagnosis RNA differential expression,CBE,Displayed log2FC interval,negative; interval -0.23 to 0.16,,-0.23,0.16,displayed interval crosses zero,Portal forest plot; printed CI endpoints and visually displayed point direction,Contextual only,2026-09-27
+Agora,AD diagnosis RNA differential expression,DLPFC,Displayed log2FC interval,positive; interval -0.0094 to 0.21,,-0.0094,0.21,displayed interval crosses zero,Portal forest plot; printed CI endpoints and visually displayed point direction,Contextual only,2026-09-27
+Agora,AD diagnosis RNA differential expression,FP,Displayed log2FC interval,positive; interval 0.024 to 0.32,,0.024,0.32,displayed interval excludes zero,Portal forest plot; printed CI endpoints and visually displayed point direction,Contextual only,2026-09-27
+Agora,AD diagnosis RNA differential expression,IFG,Displayed log2FC interval,positive; interval 0.036 to 0.34,,0.036,0.34,displayed interval excludes zero,Portal forest plot; printed CI endpoints and visually displayed point direction,Contextual only,2026-09-27
+Agora,AD diagnosis RNA differential expression,PCC,Displayed log2FC interval,positive; interval -0.069 to 0.19,,-0.069,0.19,displayed interval crosses zero,Portal forest plot; printed CI endpoints and visually displayed point direction,Contextual only,2026-09-27
+Agora,AD diagnosis RNA differential expression,PHG,Displayed log2FC interval,positive; interval 0.21 to 0.51,,0.21,0.51,displayed interval excludes zero,Portal forest plot; printed CI endpoints and visually displayed point direction,Contextual only,2026-09-27
+Agora,AD diagnosis RNA differential expression,STG,Displayed log2FC interval,positive; interval -0.038 to 0.27,,-0.038,0.27,displayed interval crosses zero,Portal forest plot; printed CI endpoints and visually displayed point direction,Contextual only,2026-09-27
+Agora,AD diagnosis RNA differential expression,TCX,Displayed log2FC interval,positive; interval -0.064 to 0.32,,-0.064,0.32,displayed interval crosses zero,Portal forest plot; printed CI endpoints and visually displayed point direction,Contextual only,2026-09-27
+Agora,AD phenotype association,BRAAK,Displayed odds-ratio position,>1,,,,positive association,Portal figure,Descriptive contextualization only,2026-09-27
+Agora,AD phenotype association,CERAD,Displayed odds-ratio position,<1,,,,inverse association,Portal figure,Descriptive contextualization only,2026-09-27
+Agora,AD phenotype association,COGDX,Displayed odds-ratio position,<1,,,,inverse/near-null association,Portal figure,Descriptive contextualization only,2026-09-27
+Agora,Proteomics,SRM,Data availability,No data currently available,,,,No available CREB5 protein measurement in queried panel; not evidence of no protein effect.,Portal panel,Absence of available proteomic validation; not a biological null result,2026-09-27
+Agora,Proteomics,TMT,Data availability,No data currently available,,,,No available CREB5 protein measurement in queried panel; not evidence of no protein effect.,Portal panel,Absence of available proteomic validation; not a biological null result,2026-09-27
+Agora,Proteomics,LFQ,Data availability,No data currently available,,,,No available CREB5 protein measurement in queried panel; not evidence of no protein effect.,Portal panel,Absence of available proteomic validation; not a biological null result,2026-09-27
+Agora,Metabolomics,PC ae C40:1,AD vs CN,Portal comparison displayed,,,,Recorded for completeness only; not incorporated into the primary or secondary claims.,Portal figure,Not used for validation/inference,2026-09-27
