@@ -141,14 +141,14 @@ The secondary-context package passed its final audit with:
 - **0/10 local-pathology correlations significant after BH correction**
 - **5/5 displayed Braak B1-versus-B3 comparisons significant after the additional BH correction**
 
-The previous frozen archival release is published at Zenodo:
+The current archived reproducibility release is published at Zenodo:
 
-**https://doi.org/10.5281/zenodo.22884235**
+**https://doi.org/10.5281/zenodo.23002477**
 
-The current GitHub revision contains the newly added secondary-context materials that will be included in the next archived Zenodo version.
+The previous release remains available in the Zenodo version history.
 
 ## Citation
 
 Please cite the associated manuscript/preprint when available.
 
-The existing reproducibility release DOI is **10.5281/zenodo.22884235**. Repository citation metadata are provided in `CITATION.cff`.
+The current reproducibility release DOI is **10.5281/zenodo.23002477**. Repository citation metadata are provided in `CITATION.cff`.
