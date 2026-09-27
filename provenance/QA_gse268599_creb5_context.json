@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "gene": "CREB5",
+  "accession": "GSE268599",
+  "cell_type": "astrocytes",
+  "regions": [
+    "EC",
+    "ITG",
+    "PFC",
+    "V2",
+    "V1"
+  ],
+  "local_pathology_tests": 10,
+  "local_pathology_q_lt_0.05": 0,
+  "braak_B1_vs_B3_tests": 5,
+  "braak_B1_vs_B3_q_lt_0.05": 5,
+  "minimum_braak_q": 7.9e-05,
+  "maximum_braak_q": 0.0317,
+  "notes": [
+    "A\u03b2 and pTau/Tau form one 10-test BH family.",
+    "Braak B1-vs-B3 forms a separate 5-test BH family.",
+    "Pathology-group portal P values were not selectively re-corrected.",
+    "Portal P values are distinguished from calculations performed in the present study.",
+    "Five regions belong to one multi-region study and are not five independent cohorts."
+  ]
+}
