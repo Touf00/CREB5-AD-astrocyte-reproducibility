@@ -7,6 +7,6 @@ authors:
     given-names: "Mohamed"
     orcid: "https://orcid.org/0000-0002-5028-7463"
 repository-code: "https://github.com/Touf00/CREB5-AD-astrocyte-reproducibility"
-abstract: "Reproducibility materials for sequential cross-cohort validation of CREB5 upregulation in human Alzheimer's disease astrocytes."
+abstract: "Reproducibility materials for cross-cohort validation and secondary neuropathological contextualization of CREB5 upregulation in human Alzheimer's disease astrocytes."
 license: MIT
 doi: "10.5281/zenodo.22884235"
