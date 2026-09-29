@@ -1,0 +1,11 @@
+analysis	contrast	estimate	ci_low	ci_high	p_value	note
+donor_level_mean	PathGroup1	0.262				Mean donor-level CREB5 across available regions
+donor_level_mean	PathGroups3_4	0.661				Mean donor-level CREB5 across available regions
+donor_level_ratio	Groups3_4_vs_1	2.52				High/low mean ratio
+donor_level_welch	Groups3_4_vs_1				6.19e-05	Primary donor-level test
+donor_level_mann_whitney	Groups3_4_vs_1				4.08e-05	Robustness
+donor_level_log1p_welch	Groups3_4_vs_1				2.60e-05	Robustness
+region_adjusted_clustered	Groups3_4_vs_1	0.379	0.209	0.548	1.16e-05	Region-adjusted; donor-clustered SE
+region_adjusted_clustered_log1p	Groups3_4_vs_1	0.239	0.138	0.340	3.48e-06	Region-adjusted; donor-clustered SE
+region_adjusted_stage	Group3_vs_1	0.408			9.30e-05	Secondary stage-specific contrast
+region_adjusted_stage	Group4_vs_1	0.368			0.00236	Secondary stage-specific contrast
