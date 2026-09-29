@@ -1,0 +1,15 @@
+panel,item,value_1,value_2,note
+A,Pathology Group 1 mean,0.262,,8 donors
+A,Pathology Groups 3+4 mean,0.661,,16 donors
+A,Welch P,6.19e-05,,Primary donor-level contrast
+A,Mean ratio,2.52,,Groups 3+4 / Group 1
+B,EC,-0.091,,CREB5 vs local Aβ Pearson R
+B,ITG,0.30,,CREB5 vs local Aβ Pearson R
+B,PFC,-0.0088,,CREB5 vs local Aβ Pearson R
+B,V2,0.35,,CREB5 vs local Aβ Pearson R
+B,V1,-0.13,,CREB5 vs local Aβ Pearson R
+C,EC,-0.12,,CREB5 vs local pTau/total tau Pearson R
+C,ITG,0.25,,CREB5 vs local pTau/total tau Pearson R
+C,PFC,0.10,,CREB5 vs local pTau/total tau Pearson R
+C,V2,0.028,,CREB5 vs local pTau/total tau Pearson R
+C,V1,-0.042,,CREB5 vs local pTau/total tau Pearson R
