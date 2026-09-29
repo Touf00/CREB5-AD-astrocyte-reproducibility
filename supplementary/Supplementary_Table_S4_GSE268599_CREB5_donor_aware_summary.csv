@@ -1,0 +1,11 @@
+analysis,contrast,estimate_or_result,ci_low,ci_high,p_value,status
+donor_level_mean,Pathology Group 1,0.262,,,,Descriptive
+donor_level_mean,Pathology Groups 3+4,0.661,,,,Descriptive
+mean_ratio,Groups 3+4 vs Group 1,2.52-fold,,,,Descriptive
+Welch_test,Groups 3+4 vs Group 1,,,,6.19e-05,Primary
+Mann_Whitney,Groups 3+4 vs Group 1,,,,4.08e-05,Robustness
+log1p_Welch,Groups 3+4 vs Group 1,,,,2.60e-05,Robustness
+region_adjusted_donor_clustered,Groups 3+4 vs Group 1,0.379,0.209,0.548,1.16e-05,Sensitivity
+region_adjusted_donor_clustered_log1p,Groups 3+4 vs Group 1,0.239,0.138,0.340,3.48e-06,Sensitivity
+region_adjusted_stage,Group 3 vs Group 1,0.408,,,9.30e-05,Secondary
+region_adjusted_stage,Group 4 vs Group 1,0.368,,,0.00236,Secondary
