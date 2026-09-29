@@ -1,0 +1,10 @@
+Dataset,Malva AD/control sample units,Existing overlap?,Donor provenance / key limitation,Final disposition
+GSE157827,6/6,Yes,Formal donor-level analysis already completed,Existing evidence only
+GSE138852,4/4,Yes,Donors reconstructed independently outside Malva,Existing evidence only
+GSE174367,11/8,Yes,Formal donor-level analysis already completed,Existing evidence only
+GSE222007,8/9,No,Multiple libraries can map to the same donor; donor/fraction reconstruction required,Eligible in principle; not pursued
+GSE214979,6/10,No,Incomplete/heterogeneous region metadata and age imbalance,Descriptive only
+GSE243292,7/3,No,Only three control sample units; weak control support,Descriptive only
+GSE163577,11/2,No,Only two controls; tissue imbalance; several very small astrocyte units,Not suitable
+GSE303823,3/2,No,Only two controls and very small cell support,Not suitable
+Grinberg-Human-10x3pv2,11/0,No,No within-study healthy controls; no SRS accession,Not suitable
