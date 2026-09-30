@@ -13,7 +13,7 @@ The primary analysis asks whether a CREB5 astrocyte signal first identified in S
 
 The primary inferential sequence comprises SEA-AD, GSE160936, GSE157827, GSE188545, GSE138852, and GSE174367.
 
-A separate secondary contextualization layer examines CREB5 in the five-region AD Progression Atlas (GSE268599) and uses the Human Protein Atlas and Agora as orthogonal normal-brain and bulk-AD contextual resources. These secondary resources are not treated as additional primary validation cohorts.
+A separate post-freeze contextualization layer examines CREB5 in the five-region AD Progression Atlas (GSE268599), including author-provided donor-region astrocyte expression data, and uses the Human Protein Atlas, Agora, and Malva as orthogonal contextual resources. These secondary resources are not treated as additional members of the prespecified primary validation family.
 
 The workflow is organized into five notebooks:
 
@@ -55,23 +55,38 @@ The DerSimonian–Laird random-effects sensitivity remains positive:
 
 These results support reproducibility in direction while retaining substantial between-cohort heterogeneity.
 
-## Secondary AD Progression Atlas contextualization
+## Secondary AD Progression Atlas donor-aware analysis
 
-GSE268599 was examined separately using the AD Progression Atlas sample-level portal.
+After the primary validation sequence was frozen, the AD Progression Atlas study team supplied the sample-level astrocyte average-expression object and associated metadata used for the temporal-trajectory analysis.
 
-Across EC, ITG, PFC, V2, and V1, astrocytic CREB5 was higher in the advanced B3 group (Braak V/VI) than in the early B1 group (Braak 0/I/II) in all five displayed regional comparisons.
+The supplied data contain 146 donor-region observations from 32 biological donors across EC, ITG/BA20, PFC/BA46, V2, and V1, with eight donors in each pathology group.
 
-An additional Benjamini–Hochberg correction across those five portal-reported B1-versus-B3 comparisons retained all five:
+The post-freeze CREB5 analysis preserves the donor as the biological unit:
 
-- EC: q = **0.0317**
-- ITG: q = **4.78 × 10⁻4**
-- PFC: q = **0.0104**
-- V2: q = **4.78 × 10⁻4**
-- V1: q = **7.90 × 10⁻5**
+- Pathology Group 1 mean = **0.262**
+- Pathology Groups 3+4 mean = **0.661**
+- high/low mean ratio = **2.52-fold**
+- donor-level Welch P = **6.19 × 10⁻5**
+- Mann-Whitney P = **4.08 × 10⁻5**
+- log1p Welch P = **2.60 × 10⁻5**
+- region-adjusted donor-clustered effect = **0.379** (95% CI 0.209–0.548; P = **1.16 × 10⁻5**)
+- log1p region-adjusted effect = **0.239** (95% CI 0.138–0.340; P = **3.48 × 10⁻6**)
+- Group 3 vs Group 1 region-adjusted effect = **0.408** (P = **9.30 × 10⁻5**)
+- Group 4 vs Group 1 region-adjusted effect = **0.368** (P = **0.00236**)
 
-In contrast, none of ten portal-reported sample-level correlations between CREB5 and local Aβ plaque or pTau/total-tau burden survived an additional Benjamini–Hochberg correction across the ten tests.
+Group 2 was heterogeneous, so the result is not presented as a strictly monotonic four-stage trajectory.
 
-These Atlas results are treated as secondary disease-stage contextualization, not as five independent replication cohorts and not as evidence that CREB5 is independent of local amyloid or tau pathology.
+The public Atlas portal is retained only for local-pathology contextualization. None of ten regional CREB5 correlations with local Aβ plaque or pTau/total-tau burden survived the additional Benjamini-Hochberg correction.
+
+The author-provided RData and metadata are not redistributed. Code, frozen derived statistics, and provenance are under `postfreeze/GSE268599_author_validation/`.
+
+## Malva atlas-scale audit
+
+After the primary validation and external synthesis were frozen, CREB5 was queried in Malva Expression Explorer v0.7.6 using Brain and astrocyte ontology filters. Malva was used as a cross-study heterogeneity and provenance audit, not as an inferential replication dataset.
+
+Sample accessions were not assumed to be biological donors, pooled cells were not treated as replicates, and no additional cohort was added to the locked validation family on the basis of Malva results.
+
+The query manifest and dataset dispositions are preserved under `postfreeze/Malva/` and `supplementary/Supplementary_Table_S6_Malva_CREB5.csv`.
 
 ## HPA and Agora contextualization
 
@@ -98,7 +113,7 @@ Secondary-context QA outputs and SHA256 manifests are preserved under `provenanc
 - `notebooks/` — five cleaned/reproducible analysis notebooks.
 - `provenance/` — protocol/result locks, chronology notes, historical records, secondary-context QA, and SHA256 manifests.
 - `frozen_results/` — compact primary result tables plus frozen GSE268599, HPA, and Agora contextual source tables.
-- `supplementary/` — machine-readable Supplementary Tables S1–S5, Supplementary Figure S6, and external-validation synthesis materials.
+- `supplementary/` — machine-readable Supplementary Tables S1–S6, Supplementary Figure S6 source data, and external-validation synthesis materials.
 - `figures/` — manuscript figure source materials included in the repository release.
 - `requirements.txt` and `requirements_notebook*.txt` — software environment specifications.
 - `DATASET_MANIFEST.csv` — dataset and contextual-resource manifest.
@@ -141,14 +156,14 @@ The secondary-context package passed its final audit with:
 - **0/10 local-pathology correlations significant after BH correction**
 - **5/5 displayed Braak B1-versus-B3 comparisons significant after the additional BH correction**
 
-The current archived reproducibility release is published at Zenodo:
+The archived Version 1.1.0 reproducibility release is published at Zenodo:
 
 **https://doi.org/10.5281/zenodo.23002477**
 
-The previous release remains available in the Zenodo version history.
+Version 1.1.0 predates the post-freeze donor-aware GSE268599 and Malva additions. The current GitHub repository contains those additions.
 
 ## Citation
 
 Please cite the associated manuscript/preprint when available.
 
-The current reproducibility release DOI is **10.5281/zenodo.23002477**. Repository citation metadata are provided in `CITATION.cff`.
+The Version 1.1.0 archive DOI is **10.5281/zenodo.23002477**. Current post-freeze additions are available in this GitHub repository. Repository citation metadata are provided in `CITATION.cff`.
